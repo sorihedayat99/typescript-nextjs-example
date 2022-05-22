@@ -1,6 +1,11 @@
 # TypeScript Next.js example
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
+
+##Basic Prop Types Examples
+A list of TypeScript types you will likely use in a React+TypeScript app:
+
+
 ```
 type AppProps = {
   message: string;
@@ -42,6 +47,10 @@ type AppProps = {
   optional?: OptionalType;
 };
 ```
+##Useful React Prop Type Examples
+Relevant for components that accept other React components as props.
+
+
 ```
 export declare interface AppProps {
   children1: JSX.Element; // bad, doesnt account for arrays
