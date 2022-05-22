@@ -2,7 +2,7 @@
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
 
-##Basic Prop Types Examples
+## Basic Prop Types Examples
 A list of TypeScript types you will likely use in a React+TypeScript app:
 
 
@@ -11,43 +11,43 @@ type AppProps = {
   message: string;
   count: number;
   disabled: boolean;
-  /** array of a type! */
+  # array of a type! 
   names: string[];
-  /** string literals to specify exact string values, with a union type to join them together */
+  # string literals to specify exact string values, with a union type to join them together 
   status: "waiting" | "success";
-  /** any object as long as you dont use its properties (NOT COMMON but useful as placeholder) */
+  # any object as long as you dont use its properties (NOT COMMON but useful as placeholder) 
   obj: object;
   obj2: {}; // almost the same as `object`, exactly the same as `Object`
-  /** an object with any number of properties (PREFERRED) */
+  # an object with any number of properties (PREFERRED) 
   obj3: {
     id: string;
     title: string;
   };
-  /** array of objects! (common) */
+  # array of objects! (common) 
   objArr: {
     id: string;
     title: string;
   }[];
-  /** a dict object with any number of properties of the same type */
+  # a dict object with any number of properties of the same type 
   dict1: {
     [key: string]: MyTypeHere;
   };
   dict2: Record<string, MyTypeHere>; // equivalent to dict1
-  /** any function as long as you don't invoke it (not recommended) */
+  # any function as long as you don't invoke it (not recommended) 
   onSomething: Function;
-  /** function that doesn't take or return anything (VERY COMMON) */
+  # function that doesn't take or return anything (VERY COMMON) 
   onClick: () => void;
-  /** function with named prop (VERY COMMON) */
+  # function with named prop (VERY COMMON) 
   onChange: (id: number) => void;
-  /** function type syntax that takes an event (VERY COMMON) */
+  # function type syntax that takes an event (VERY COMMON) 
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  /** alternative function type syntax that takes an event (VERY COMMON) */
+  # alternative function type syntax that takes an event (VERY COMMON) 
   onClick(event: React.MouseEvent<HTMLButtonElement>): void;
-  /** an optional prop (VERY COMMON!) */
+  # an optional prop (VERY COMMON!) 
   optional?: OptionalType;
 };
 ```
-##Useful React Prop Type Examples
+## Useful React Prop Type Examples
 Relevant for components that accept other React components as props.
 
 
